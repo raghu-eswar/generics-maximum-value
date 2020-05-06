@@ -10,4 +10,13 @@ public class Max {
             max = arg3;
         return max;
     }
+
+    public static Float maxOf(Float arg1, Float arg2, Float arg3) {
+        Float max = arg1;
+        if (max.compareTo(arg2) < 0)
+            max = arg2;
+        if (max.compareTo(arg3) < 0)
+            max = arg3;
+        return max;
+    }
 }
