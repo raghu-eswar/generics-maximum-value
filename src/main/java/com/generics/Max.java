@@ -19,4 +19,13 @@ public class Max {
             max = arg3;
         return max;
     }
+
+    public static String maxOf(String arg1, String arg2, String arg3) {
+        String max = arg1;
+        if (max.compareTo(arg2) < 0)
+            max = arg2;
+        if (max.compareTo(arg3) < 0)
+            max = arg3;
+        return max;
+    }
 }

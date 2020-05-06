@@ -40,4 +40,22 @@ public class MaxTest {
         Float result = Max.maxOf(10.1f, 20.2f,30.3f);
         Assert.assertEquals(30.3f, result, 0.0f);
     }
+
+    @Test
+    public void maxStringAtBeginning() {
+        String result = Max.maxOf("peanch", "apple", "bananna");
+        Assert.assertEquals("peanch", result);
+    }
+
+    @Test
+    public void maxStringAtSecond() {
+        String result = Max.maxOf("apple", "peanch", "bananna");
+        Assert.assertEquals("peanch", result);
+    }
+
+    @Test
+    public void maxStringAtLast() {
+        String result = Max.maxOf("apple", "bananna", "peanch");
+        Assert.assertEquals("peanch", result);
+    }
 }
