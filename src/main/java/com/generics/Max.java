@@ -1,27 +1,23 @@
 package com.generics;
 
 public class Max <Any extends  Comparable> {
-    Any value1;
-    Any value2;
-    Any value3;
+    Any[] values;
 
-    public Max(Any value1, Any value2, Any value3) {
-        this.value1 = value1;
-        this.value2 = value2;
-        this.value3 = value3;
+    public Max(Any ... values) {
+        this.values = values;
     }
 
     public Any maxOf(){
-        return maxOf(this.value1, this.value2, this.value3);
+        return maxOf(this.values);
     }
 
 
-    public static <Any extends  Comparable> Any maxOf(Any arg1, Any arg2, Any arg3) {
-        Any max = arg1;
-        if (max.compareTo(arg2) < 0)
-            max = arg2;
-        if (max.compareTo(arg3) < 0)
-            max = arg3;
+    public static <Any extends  Comparable> Any maxOf(Any ... values) {
+        Any max = values[0];
+        for (int i = 1; i < values.length; i++) {
+            if (max.compareTo(values[i]) < 0)
+                max = values[i];
+        }
         return max;
     }
 }
