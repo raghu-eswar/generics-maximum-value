@@ -22,4 +22,22 @@ public class MaxTest {
         Integer result = Max.maxOf(42,37,68);
         Assert.assertEquals(68, result.intValue());
     }
+
+    @Test
+    public void maxFloatValueAtBeginning() {
+        Float result = Max.maxOf(30.3f, 20.2f,10.1f);
+        Assert.assertEquals(30.3f, result, 0.0f);
+    }
+
+    @Test
+    public void maxFloatValueAtSecond() {
+        Float result = Max.maxOf(10.1f, 30.3f,20.2f);
+        Assert.assertEquals(30.3f, result, 0.0f);
+    }
+
+    @Test
+    public void maxFloatValueAtLast() {
+        Float result = Max.maxOf(10.1f, 20.2f,30.3f);
+        Assert.assertEquals(30.3f, result, 0.0f);
+    }
 }
