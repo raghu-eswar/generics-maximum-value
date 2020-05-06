@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.generics.MaxTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-05-06T13:32:48" hostname="FGT-HYD-LL-020" time="0.027">
+  <properties/>
+  <testcase name="maxStringAtLast" classname="com.generics.MaxTest" time="0.017"/>
+  <testcase name="maxFloatValueAtBeginning" classname="com.generics.MaxTest" time="0.002"/>
+  <testcase name="maxIntegerAtLast" classname="com.generics.MaxTest" time="0.0"/>
+  <testcase name="maxStringAtBeginning" classname="com.generics.MaxTest" time="0.0"/>
+  <testcase name="maxIntegerAtSecond" classname="com.generics.MaxTest" time="0.0"/>
+  <testcase name="maxIntegerAtBeginning" classname="com.generics.MaxTest" time="0.0"/>
+  <testcase name="maxFloatValueAtLast" classname="com.generics.MaxTest" time="0.001"/>
+  <testcase name="maxStringAtSecond" classname="com.generics.MaxTest" time="0.001"/>
+  <testcase name="maxFloatValueAtSecond" classname="com.generics.MaxTest" time="0.0"/>
+  <system-out><![CDATA[maximum value is :peanch
+maximum value is :30.3
+maximum value is :82
+maximum value is :peanch
+maximum value is :82
+maximum value is :82
+maximum value is :30.3
+maximum value is :peanch
+maximum value is :30.3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
